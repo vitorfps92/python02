@@ -14,6 +14,12 @@ df2 = pd.read_excel(arquivo, sheet_name='Relatório de Vendas1')
 # Concatenar as duas tabelas
 df_consolidado = pd.concat([df1, df2], ignore_index=True)
 
+# Remover as duplicatas do dataframe
+df_consolidado = df_consolidado.drop_duplicates()
+
+# Adiciona uma coluna de status com base no plano vendido
+df_consolidado['Status'] = df_consolidado['Plano Vendido'].apply(lambda x:'Premium'if x=='Enterprise' else 'Padrão')
+
 #Rota da página inicial ex: http://127.0.0.1:5000/
 @app.route('/')
 def pagina_inicial():
@@ -41,7 +47,7 @@ def pagina_inicial():
         <a href='/top3_cidades'> -- Top 3 cidades -- </a><br/>
         <a href='/download/excel'> -- Download em excel -- </a><br/>
         <a href='/download/csv'> -- Download em csv -- </a><br/>
-        <a href=''> -- Grafico de pizza -- </a><br/>
+        <a href='/grafico_pizza'> -- Grafico de pizza -- </a><br/>
         <a href='/grafico_barras'> -- Grafico de barras -- </a><br/>
         <br/>
         <a href='mailto:vitorfps@hotmail.com'> E-mail de contato </a>
@@ -83,17 +89,46 @@ def grafico_barras():
     vendas_por_plano = df_consolidado['Plano Vendido'].value_counts()
 
     # Criar o gráfico de barras
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots() #cria um objeto de figura para os eixos do gráfico
     vendas_por_plano.plot(kind='bar', ax=ax , color=['#66b3ff','#99ff99'])
     ax.set_title('Graficos de venda por plano')
     ax.set_xlabel('Plano')
     ax.set_ylabel('Numero de vendas')
 
     # Salvar o gráfico em um objeto de memória
-    img = io.BytesIO()
-    plt.savefig(img, format='png')
-    img.seek(0)
+    img = io.BytesIO() # Cria um buffer de memória e armazena a imagem
+    plt.savefig(img, format='png') # Salva a imagem em formato png dentro do buffer
+    img.seek(0) # Move o ponteiro para o início do buffer
 
+    # Converte a imagem em uma string codificada em padrão correto base64
+    img_base64 = base64.b64encode(img.getvalue()).decode('utf-8')
+
+    # Retornando a imagem como resposta
+    return send_file(img, mimetype='image/png')
+
+# Gráfico de pizza
+@app.route('/grafico_pizza')
+def grafico_pizza():
+    # Conta a quantidade de cada status
+    status_dist = df_consolidado['Status'].value_counts()
+
+    # Criar o gráfico de pizza
+    fig, ax = plt.subplots()
+    ax.pie(
+        status_dist,
+        labels=status_dist.index,
+        autopct='%1.1f%%',
+        startangle=90,
+        colors=['#8FFA4B','#FA7B4B']
+        )
+    ax.axis('equal')
+
+    # Salvar o gráfico em um objeto de memória
+    img = io.BytesIO() # Cria um buffer de memória e armazena a imagem
+    plt.savefig(img, format='png') # Salva a imagem em formato png dentro do buffer
+    img.seek(0) # Move o ponteiro para o início do buffer
+
+    # Converte a imagem em uma string codificada em padrão correto base64
     img_base64 = base64.b64encode(img.getvalue()).decode('utf-8')
 
     # Retornando a imagem como resposta
