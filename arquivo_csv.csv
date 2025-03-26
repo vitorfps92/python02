@@ -1,0 +1,482 @@
+Posição,Cliente,Cidade,Plano Vendido,7,Plan Smarter,Rio de Janeiro,Enterprise
+1.0,Ejecta,Curitiba,Enterprise,,,,
+4.0,Exact Realty,Rio de Janeiro,Enterprise,,,,
+5.0,Express Merchant,Curitiba,Enterprise,,,,
+6.0,Perisolution,Porto Alegre,Enterprise,,,,
+7.0,Plan Smarter,Rio de Janeiro,Enterprise,,,,
+8.0,Planetbiz,Rio de Janeiro,Enterprise,,,,
+9.0,Powerbod,Curitiba,Enterprise,,,,
+10.0,Prahject Planner,Porto Alegre,Enterprise,,,,
+11.0,Pro-Care Garden,Rio de Janeiro,Enterprise,,,,
+12.0,Pro Star Game,Rio de Janeiro,Enterprise,,,,
+13.0,Profitpros,Curitiba,Enterprise,,,,
+14.0,Datacorp,Porto Alegre,Enterprise,,,,
+15.0,Destiny Realty,Rio de Janeiro,Enterprise,,,,
+16.0,Dream House,Rio de Janeiro,Enterprise,,,,
+17.0,Eden Lawn,Salvador,Enterprise,,,,
+18.0,Magik Gray,São Paulo,Premium,,,,
+19.0,Edge Yard,Porto Alegre,Premium,,,,
+20.0,Magna Arch.,Florianópolis,Premium,,,,
+21.0,Electronics Source,Rio de Janeiro,Premium,,,,
+22.0,MagnaSolution,Salvador,Premium,,,,
+23.0,Environ Architectural,Rio de Janeiro,Premium,,,,
+24.0,Manu Connection,Porto Alegre,Premium,,,,
+25.0,Envirotecture Design,Curitiba,Premium,,,,
+26.0,Matrix Arch.,São Paulo,Premium,,,,
+27.0,Excella,Porto Alegre,Premium,,,,
+28.0,Maxi-Tech,Florianópolis,Premium,,,,
+29.0,Pearl Architectural,Rio de Janeiro,Premium,,,,
+30.0,Megatronic,Salvador,Premium,,,,
+31.0,Plan Future,Rio de Janeiro,Premium,,,,
+32.0,Micro Design,Porto Alegre,Premium,,,,
+33.0,Planet Profit,Curitiba,Premium,,,,
+34.0,Millenia Life,São Paulo,Premium,,,,
+35.0,Pointers,Porto Alegre,Premium,,,,
+36.0,Mission You,Florianópolis,Premium,,,,
+37.0,Practi-Plan Mapping,Rio de Janeiro,Premium,,,,
+38.0,Monit,Salvador,Premium,,,,
+39.0,Prestigabiz,Rio de Janeiro,Premium,,,,
+40.0,Main House,Porto Alegre,Premium,,,,
+41.0,Pro Property,Curitiba,Premium,,,,
+42.0,Monky House,São Paulo,Premium,,,,
+43.0,Pro Yard,Porto Alegre,Premium,,,,
+44.0,Monsource,Florianópolis,Premium,,,,
+45.0,Protean,Rio de Janeiro,Premium,,,,
+46.0,Multicerv,Salvador,Premium,,,,
+47.0,Destiny Planners,Rio de Janeiro,Premium,,,,
+48.0,Earthworks Garden,Porto Alegre,Premium,,,,
+49.0,Dream Home,Curitiba,Premium,,,,
+50.0,Fireball,Salvador,Pro,,,,
+51.0,Dunk To.,Porto Alegre,Pro,,,,
+52.0,Ideal Gard,Curitiba,Pro,,,,
+53.0,First Rate,São Paulo,Pro,,,,
+54.0,Target Source,Rio de Janeiro,Pro,,,,
+55.0,Independent Wealth,São Paulo,Pro,,,,
+56.0,Formula Gray,Belo Horizonte,Pro,,,,
+57.0,Techo Solutions,Porto Alegre,Pro,,,,
+58.0,Infinite Wealth,São Paulo,Pro,,,,
+59.0,Fragrant Flower,Belo Horizonte,Pro,,,,
+60.0,The Flying,São Paulo,Pro,,,,
+61.0,Integra Investment,Rio de Janeiro,Pro,,,,
+62.0,Friendly Advice,Salvador,Pro,,,,
+63.0,The Goose,Porto Alegre,Pro,,,,
+64.0,Integra Health,Curitiba,Pro,,,,
+65.0,Future Bright,São Paulo,Pro,,,,
+66.0,The Independent,Rio de Janeiro,Pro,,,,
+67.0,Landskip Garden,São Paulo,Pro,,,,
+68.0,Accord Investments,Belo Horizonte,Pro,,,,
+69.0,The Network,Porto Alegre,Pro,,,,
+70.0,Lawn N',São Paulo,Pro,,,,
+71.0,Adaptabiz,Belo Horizonte,Pro,,,,
+72.0,The Serendipity,São Paulo,Pro,,,,
+73.0,Libera,Rio de Janeiro,Pro,,,,
+74.0,Advansed Teksyztems,Salvador,Pro,,,,
+75.0,The White,Porto Alegre,Pro,,,,
+76.0,Life Mapping,Curitiba,Pro,,,,
+77.0,Afforda Merchant,São Paulo,Pro,,,,
+78.0,Total Quality,Rio de Janeiro,Pro,,,,
+79.0,Life's Gold,São Paulo,Pro,,,,
+80.0,Alladin's Lamp,Belo Horizonte,Pro,,,,
+81.0,Total Garden,Porto Alegre,Pro,,,,
+82.0,Lone Wolf,São Paulo,Pro,,,,
+83.0,Asian Fusion,Belo Horizonte,Pro,,,,
+84.0,Beasts of,São Paulo,Pro,,,,
+85.0,Netobill,Rio de Janeiro,Pro,,,,
+86.0,Asian Solutions,Salvador,Pro,,,,
+87.0,Benesome,Porto Alegre,Pro,,,,
+88.0,Netstars Matrix,Curitiba,Pro,,,,
+89.0,Atlas Realty,São Paulo,Pro,,,,
+90.0,Buena Vista,Rio de Janeiro,Pro,,,,
+91.0,New World,São Paulo,Pro,,,,
+92.0,AvantGard,Belo Horizonte,Pro,,,,
+93.0,Body Toning,Porto Alegre,Pro,,,,
+94.0,Nutri G,São Paulo,Pro,,,,
+95.0,Magna Architectural,Belo Horizonte,Pro,,,,
+96.0,Bountiful Harvest,São Paulo,Pro,,,,
+97.0,Simply Appraisals,Rio de Janeiro,Pro,,,,
+98.0,Dun Rite,Rio de Janeiro,Regular,,,,
+99.0,Edge Garden,Rio de Janeiro,Regular,,,,
+100.0,Magik Grey,Porto Alegre,Regular,,,,
+101.0,Incluesiv,Rio de Janeiro,Regular,,,,
+102.0,Target Realty,Porto Alegre,Regular,,,,
+103.0,Electronic Geek,Rio de Janeiro,Regular,,,,
+104.0,Magna Gases,São Paulo,Regular,,,,
+105.0,Indiewealth,Curitiba,Regular,,,,
+106.0,Team Uno,São Paulo,Regular,,,,
+107.0,Enviro Arch.,Curitiba,Regular,,,,
+108.0,ManCharm,Florianópolis,Regular,,,,
+109.0,Infinity Investment,São Paulo,Regular,,,,
+110.0,Terra Nova,Porto Alegre,Regular,,,,
+111.0,Envirotecture Total,Porto Alegre,Regular,,,,
+112.0,Maxaprofit,Salvador,Regular,,,,
+113.0,Integra Investmentments,São Paulo,Regular,,,,
+114.0,The Option,Rio de Janeiro,Regular,,,,
+115.0,Exact Solutions,Rio de Janeiro,Regular,,,,
+116.0,Matrix Design,Porto Alegre,Regular,,,,
+117.0,Intelacard,Rio de Janeiro,Regular,,,,
+118.0,The High,Porto Alegre,Regular,,,,
+119.0,Parts and,Rio de Janeiro,Regular,,,,
+120.0,Maxiserve ,São Paulo,Regular,,,,
+121.0,Landskip Yard,Curitiba,Regular,,,,
+122.0,The Lawn,São Paulo,Regular,,,,
+123.0,Personal &,Curitiba,Regular,,,,
+124.0,Megatronic Plus,Florianópolis,Regular,,,,
+125.0,Lawnscape Garden,São Paulo,Regular,,,,
+126.0,The Polka,Porto Alegre,Regular,,,,
+127.0,Plan Smart,Porto Alegre,Regular,,,,
+128.0,Mikro Designs,Salvador,Regular,,,,
+129.0,Liberty Heakth,São Paulo,Regular,,,,
+130.0,The White House,Rio de Janeiro,Regular,,,,
+131.0,Platinum Interior,Rio de Janeiro,Regular,,,,
+132.0,Mission G,Porto Alegre,Regular,,,,
+133.0,Life Map,Rio de Janeiro,Regular,,,,
+134.0,Total Network,Porto Alegre,Regular,,,,
+135.0,Practi-Plan,Rio de Janeiro,Regular,,,,
+136.0,Modern Architecture,São Paulo,Regular,,,,
+137.0,Listen Up,Curitiba,Regular,,,,
+138.0,Total Sources,São Paulo,Regular,,,,
+139.0,Prestiga-Biz,Curitiba,Regular,,,,
+140.0,Monlinks,Florianópolis,Regular,,,,
+141.0,Naturohair,São Paulo,Regular,,,,
+142.0,Balanced Fortune,Porto Alegre,Regular,,,,
+143.0,Pro Garden,Porto Alegre,Regular,,,,
+144.0,Monk Home,Salvador,Regular,,,,
+145.0,Netcom Business,São Paulo,Regular,,,,
+146.0,Belle Lady,Rio de Janeiro,Regular,,,,
+147.0,Pro Star,Rio de Janeiro,Regular,,,,
+148.0,Monk Real,Porto Alegre,Regular,,,,
+149.0,Network Air,Rio de Janeiro,Regular,,,,
+150.0,Better Business,Porto Alegre,Regular,,,,
+151.0,Prospa-Pal,Rio de Janeiro,Regular,,,,
+152.0,Multi-Systems Merchant,São Paulo,Regular,,,,
+153.0,Newhair,Curitiba,Regular,,,,
+154.0,Body Fate,São Paulo,Regular,,,,
+155.0,Desert Garden,Curitiba,Regular,,,,
+156.0,Muscle Factory,Florianópolis,Regular,,,,
+157.0,Signa Air,São Paulo,Regular,,,,
+158.0,Bonanza Produce,Porto Alegre,Regular,,,,
+159.0,Destiny Reality,Porto Alegre,Regular,,,,
+160.0,Earthworks Yard,Salvador,Regular,,,,
+161.0,Simply Save,São Paulo,Regular,,,,
+162.0,Sistemos,Rio de Janeiro,Regular,,,,
+163.0,Magna Solution,Belo Horizonte,Regular,,,,
+164.0,Fellowship Investments,São Paulo,Basic,,,,
+165.0,Matrix Architectural,Florianópolis,Basic,,,,
+166.0,Ideal Garden,São Paulo,Basic,,,,
+167.0,First Option,Belo Horizonte,Basic,,,,
+168.0,Dynatronics Accessories,São Paulo,Basic,,,,
+169.0,First Choice,Belo Horizonte,Basic,,,,
+170.0,Magik Lamp,Salvador,Basic,,,,
+171.0,Independent Investors,São Paulo,Basic,,,,
+172.0,Fit Tonic,Salvador,Basic,,,,
+173.0,Team Designers,Porto Alegre,Basic,,,,
+174.0,Flexus,Belo Horizonte,Basic,,,,
+175.0,Magna Wealth,Porto Alegre,Basic,,,,
+176.0,Infinite Health,Rio de Janeiro,Basic,,,,
+177.0,Formula Grey,São Paulo,Basic,,,,
+178.0,Terra,Rio de Janeiro,Basic,,,,
+179.0,Four Leaf,Salvador,Basic,,,,
+180.0,ManPower,São Paulo,Basic,,,,
+181.0,Integra Design,Curitiba,Basic,,,,
+182.0,Freedom Map,Belo Horizonte,Basic,,,,
+183.0,The Fox,Porto Alegre,Basic,,,,
+184.0,Fresh Start,São Paulo,Basic,,,,
+185.0,Master Builder,Florianópolis,Basic,,,,
+186.0,Integra Wealth,São Paulo,Basic,,,,
+187.0,Friendly Interior,Belo Horizonte,Basic,,,,
+188.0,The Happy,São Paulo,Basic,,,,
+189.0,Full Color,Belo Horizonte,Basic,,,,
+190.0,Matrix Interior,Salvador,Basic,,,,
+191.0,Intelli Wealth,São Paulo,Basic,,,,
+192.0,Future Plan,Salvador,Basic,,,,
+193.0,The Jolly,Porto Alegre,Basic,,,,
+194.0,Access Asia,Belo Horizonte,Basic,,,,
+195.0,MegaSolutions,Porto Alegre,Basic,,,,
+196.0,Las Vegas,Rio de Janeiro,Basic,,,,
+197.0,Acuserv,São Paulo,Basic,,,,
+198.0,The Pink,Rio de Janeiro,Basic,,,,
+199.0,Adapt,Salvador,Basic,,,,
+200.0,Merrymaking,São Paulo,Basic,,,,
+201.0,Lazysize,Curitiba,Basic,,,,
+202.0,Adaptas,Belo Horizonte,Basic,,,,
+203.0,The Spotted,Porto Alegre,Basic,,,,
+204.0,Adaptaz,São Paulo,Basic,,,,
+205.0,Mikrotechnic,Florianópolis,Basic,,,,
+206.0,Liberty Wealth,São Paulo,Basic,,,,
+207.0,Affinity Investment,Belo Horizonte,Basic,,,,
+208.0,Titania,São Paulo,Basic,,,,
+209.0,Afforda,Belo Horizonte,Basic,,,,
+210.0,Mission Realty,Salvador,Basic,,,,
+211.0,Life Plan,São Paulo,Basic,,,,
+212.0,Alert Alarm,Salvador,Basic,,,,
+213.0,Total Serve,Porto Alegre,Basic,,,,
+214.0,Alladin Realty,Belo Horizonte,Basic,,,,
+215.0,Modern Realty,Porto Alegre,Basic,,,,
+216.0,Locost Accessories,Rio de Janeiro,Basic,,,,
+217.0,Architectural Genie,São Paulo,Basic,,,,
+218.0,Total Yard,Rio de Janeiro,Basic,,,,
+219.0,Asian Answers,Salvador,Basic,,,,
+220.0,Monk House,São Paulo,Basic,,,,
+221.0,Netaid,Curitiba,Basic,,,,
+222.0,Asian Junction,Belo Horizonte,Basic,,,,
+223.0,Belle Ladi,Porto Alegre,Basic,,,,
+224.0,Asian Plan,São Paulo,Basic,,,,
+225.0,Monk Furn,Florianópolis,Basic,,,,
+226.0,Netcore,São Paulo,Basic,,,,
+227.0,Asiatic Solutions,Belo Horizonte,Basic,,,,
+228.0,Best Biz,São Paulo,Basic,,,,
+229.0,Atlas Architectural,Belo Horizonte,Basic,,,,
+230.0,Monmax,Salvador,Basic,,,,
+231.0,New World Gen,São Paulo,Basic,,,,
+232.0,Avant Garde,Salvador,Basic,,,,
+233.0,Buena To.,Porto Alegre,Basic,,,,
+234.0,Avant Garden,Belo Horizonte,Basic,,,,
+235.0,Multi Tech,Porto Alegre,Basic,,,,
+236.0,Northern Star,Rio de Janeiro,Basic,,,,
+237.0,Awthentikz,São Paulo,Basic,,,,
+238.0,Bold Ideas,Rio de Janeiro,Basic,,,,
+239.0,Macroserve,Salvador,Basic,,,,
+240.0,E-zhe Source,São Paulo,Basic,,,,
+241.0,Simple Solutions,Curitiba,Basic,,,,
+242.0,Magna Consulting,Belo Horizonte,Basic,,,,
+243.0,Brilliant Home,Porto Alegre,Basic,,,,
+244.0,Dreamscape Garden,Curitiba,Basic,,,,
+245.0,Idea Infinity,São Paulo,Basic,,,,
+,,,,8.0,Planetbiz,Rio de Janeiro,Enterprise
+,,,,9.0,Powerbod,Curitiba,Enterprise
+,,,,10.0,Prahject Planner,Porto Alegre,Enterprise
+,,,,11.0,Pro-Care Garden,Rio de Janeiro,Enterprise
+,,,,12.0,Pro Star Game,Rio de Janeiro,Enterprise
+,,,,13.0,Profitpros,Curitiba,Enterprise
+,,,,14.0,Datacorp,Porto Alegre,Enterprise
+,,,,15.0,Destiny Realty,Rio de Janeiro,Enterprise
+,,,,16.0,Dream House,Rio de Janeiro,Enterprise
+,,,,17.0,Eden Lawn,Salvador,Enterprise
+,,,,18.0,Magik Gray,São Paulo,Premium
+,,,,19.0,Edge Yard,Porto Alegre,Premium
+,,,,20.0,Magna Arch.,Florianópolis,Premium
+,,,,21.0,Electronics Source,Rio de Janeiro,Premium
+,,,,22.0,MagnaSolution,Salvador,Premium
+,,,,23.0,Environ Architectural,Rio de Janeiro,Premium
+,,,,24.0,Manu Connection,Porto Alegre,Premium
+,,,,25.0,Envirotecture Design,Curitiba,Premium
+,,,,26.0,Matrix Arch.,São Paulo,Premium
+,,,,27.0,Excella,Porto Alegre,Premium
+,,,,28.0,Maxi-Tech,Florianópolis,Premium
+,,,,29.0,Pearl Architectural,Rio de Janeiro,Premium
+,,,,30.0,Megatronic,Salvador,Premium
+,,,,31.0,Plan Future,Rio de Janeiro,Premium
+,,,,32.0,Micro Design,Porto Alegre,Premium
+,,,,33.0,Planet Profit,Curitiba,Premium
+,,,,34.0,Millenia Life,São Paulo,Premium
+,,,,35.0,Pointers,Porto Alegre,Premium
+,,,,36.0,Mission You,Florianópolis,Premium
+,,,,37.0,Practi-Plan Mapping,Rio de Janeiro,Premium
+,,,,38.0,Monit,Salvador,Premium
+,,,,39.0,Prestigabiz,Rio de Janeiro,Premium
+,,,,40.0,Main House,Porto Alegre,Premium
+,,,,41.0,Pro Property,Curitiba,Premium
+,,,,42.0,Monky House,São Paulo,Premium
+,,,,43.0,Pro Yard,Porto Alegre,Premium
+,,,,44.0,Monsource,Florianópolis,Premium
+,,,,45.0,Protean,Rio de Janeiro,Premium
+,,,,46.0,Multicerv,Salvador,Premium
+,,,,47.0,Destiny Planners,Rio de Janeiro,Premium
+,,,,48.0,Earthworks Garden,Porto Alegre,Premium
+,,,,49.0,Dream Home,Curitiba,Premium
+,,,,50.0,Fireball,Salvador,Pro
+,,,,51.0,Dunk To.,Porto Alegre,Pro
+,,,,52.0,Ideal Gard,Curitiba,Pro
+,,,,53.0,First Rate,São Paulo,Pro
+,,,,54.0,Target Source,Rio de Janeiro,Pro
+,,,,55.0,Independent Wealth,São Paulo,Pro
+,,,,56.0,Formula Gray,Belo Horizonte,Pro
+,,,,57.0,Techo Solutions,Porto Alegre,Pro
+,,,,58.0,Infinite Wealth,São Paulo,Pro
+,,,,59.0,Fragrant Flower,Belo Horizonte,Pro
+,,,,60.0,The Flying,São Paulo,Pro
+,,,,61.0,Integra Investment,Rio de Janeiro,Pro
+,,,,62.0,Friendly Advice,Salvador,Pro
+,,,,63.0,The Goose,Porto Alegre,Pro
+,,,,64.0,Integra Health,Curitiba,Pro
+,,,,65.0,Future Bright,São Paulo,Pro
+,,,,66.0,The Independent,Rio de Janeiro,Pro
+,,,,67.0,Landskip Garden,São Paulo,Pro
+,,,,68.0,Accord Investments,Belo Horizonte,Pro
+,,,,69.0,The Network,Porto Alegre,Pro
+,,,,70.0,Lawn N',São Paulo,Pro
+,,,,71.0,Adaptabiz,Belo Horizonte,Pro
+,,,,72.0,The Serendipity,São Paulo,Pro
+,,,,73.0,Libera,Rio de Janeiro,Pro
+,,,,74.0,Advansed Teksyztems,Salvador,Pro
+,,,,75.0,The White,Porto Alegre,Pro
+,,,,76.0,Life Mapping,Curitiba,Pro
+,,,,77.0,Afforda Merchant,São Paulo,Pro
+,,,,78.0,Total Quality,Rio de Janeiro,Pro
+,,,,79.0,Life's Gold,São Paulo,Pro
+,,,,80.0,Alladin's Lamp,Belo Horizonte,Pro
+,,,,81.0,Total Garden,Porto Alegre,Pro
+,,,,82.0,Lone Wolf,São Paulo,Pro
+,,,,83.0,Asian Fusion,Belo Horizonte,Pro
+,,,,84.0,Beasts of,São Paulo,Pro
+,,,,85.0,Netobill,Rio de Janeiro,Pro
+,,,,86.0,Asian Solutions,Salvador,Pro
+,,,,87.0,Benesome,Porto Alegre,Pro
+,,,,88.0,Netstars Matrix,Curitiba,Pro
+,,,,89.0,Atlas Realty,São Paulo,Pro
+,,,,90.0,Buena Vista,Rio de Janeiro,Pro
+,,,,91.0,New World,São Paulo,Pro
+,,,,92.0,AvantGard,Belo Horizonte,Pro
+,,,,93.0,Body Toning,Porto Alegre,Pro
+,,,,94.0,Nutri G,São Paulo,Pro
+,,,,95.0,Magna Architectural,Belo Horizonte,Pro
+,,,,96.0,Bountiful Harvest,São Paulo,Pro
+,,,,97.0,Simply Appraisals,Rio de Janeiro,Pro
+,,,,98.0,Dun Rite,Rio de Janeiro,Regular
+,,,,99.0,Edge Garden,Rio de Janeiro,Regular
+,,,,100.0,Magik Grey,Porto Alegre,Regular
+,,,,101.0,Incluesiv,Rio de Janeiro,Regular
+,,,,102.0,Target Realty,Porto Alegre,Regular
+,,,,103.0,Electronic Geek,Rio de Janeiro,Regular
+,,,,104.0,Magna Gases,São Paulo,Regular
+,,,,105.0,Indiewealth,Curitiba,Regular
+,,,,106.0,Team Uno,São Paulo,Regular
+,,,,107.0,Enviro Arch.,Curitiba,Regular
+,,,,108.0,ManCharm,Florianópolis,Regular
+,,,,109.0,Infinity Investment,São Paulo,Regular
+,,,,110.0,Terra Nova,Porto Alegre,Regular
+,,,,111.0,Envirotecture Total,Porto Alegre,Regular
+,,,,112.0,Maxaprofit,Salvador,Regular
+,,,,113.0,Integra Investmentments,São Paulo,Regular
+,,,,114.0,The Option,Rio de Janeiro,Regular
+,,,,115.0,Exact Solutions,Rio de Janeiro,Regular
+,,,,116.0,Matrix Design,Porto Alegre,Regular
+,,,,117.0,Intelacard,Rio de Janeiro,Regular
+,,,,118.0,The High,Porto Alegre,Regular
+,,,,119.0,Parts and,Rio de Janeiro,Regular
+,,,,120.0,Maxiserve ,São Paulo,Regular
+,,,,121.0,Landskip Yard,Curitiba,Regular
+,,,,122.0,The Lawn,São Paulo,Regular
+,,,,123.0,Personal &,Curitiba,Regular
+,,,,124.0,Megatronic Plus,Florianópolis,Regular
+,,,,125.0,Lawnscape Garden,São Paulo,Regular
+,,,,126.0,The Polka,Porto Alegre,Regular
+,,,,127.0,Plan Smart,Porto Alegre,Regular
+,,,,128.0,Mikro Designs,Salvador,Regular
+,,,,129.0,Liberty Heakth,São Paulo,Regular
+,,,,130.0,The White House,Rio de Janeiro,Regular
+,,,,131.0,Platinum Interior,Rio de Janeiro,Regular
+,,,,132.0,Mission G,Porto Alegre,Regular
+,,,,133.0,Life Map,Rio de Janeiro,Regular
+,,,,134.0,Total Network,Porto Alegre,Regular
+,,,,135.0,Practi-Plan,Rio de Janeiro,Regular
+,,,,136.0,Modern Architecture,São Paulo,Regular
+,,,,137.0,Listen Up,Curitiba,Regular
+,,,,138.0,Total Sources,São Paulo,Regular
+,,,,139.0,Prestiga-Biz,Curitiba,Regular
+,,,,140.0,Monlinks,Florianópolis,Regular
+,,,,141.0,Naturohair,São Paulo,Regular
+,,,,142.0,Balanced Fortune,Porto Alegre,Regular
+,,,,143.0,Pro Garden,Porto Alegre,Regular
+,,,,144.0,Monk Home,Salvador,Regular
+,,,,145.0,Netcom Business,São Paulo,Regular
+,,,,146.0,Belle Lady,Rio de Janeiro,Regular
+,,,,147.0,Pro Star,Rio de Janeiro,Regular
+,,,,148.0,Monk Real,Porto Alegre,Regular
+,,,,149.0,Network Air,Rio de Janeiro,Regular
+,,,,150.0,Better Business,Porto Alegre,Regular
+,,,,151.0,Prospa-Pal,Rio de Janeiro,Regular
+,,,,152.0,Multi-Systems Merchant,São Paulo,Regular
+,,,,153.0,Newhair,Curitiba,Regular
+,,,,154.0,Body Fate,São Paulo,Regular
+,,,,155.0,Desert Garden,Curitiba,Regular
+,,,,156.0,Muscle Factory,Florianópolis,Regular
+,,,,157.0,Signa Air,São Paulo,Regular
+,,,,158.0,Bonanza Produce,Porto Alegre,Regular
+,,,,159.0,Destiny Reality,Porto Alegre,Regular
+,,,,160.0,Earthworks Yard,Salvador,Regular
+,,,,161.0,Simply Save,São Paulo,Regular
+,,,,162.0,Sistemos,Rio de Janeiro,Regular
+,,,,163.0,Magna Solution,Belo Horizonte,Regular
+,,,,164.0,Fellowship Investments,São Paulo,Basic
+,,,,165.0,Matrix Architectural,Florianópolis,Basic
+,,,,166.0,Ideal Garden,São Paulo,Basic
+,,,,167.0,First Option,Belo Horizonte,Basic
+,,,,168.0,Dynatronics Accessories,São Paulo,Basic
+,,,,169.0,First Choice,Belo Horizonte,Basic
+,,,,170.0,Magik Lamp,Salvador,Basic
+,,,,171.0,Independent Investors,São Paulo,Basic
+,,,,172.0,Fit Tonic,Salvador,Basic
+,,,,173.0,Team Designers,Porto Alegre,Basic
+,,,,174.0,Flexus,Belo Horizonte,Basic
+,,,,175.0,Magna Wealth,Porto Alegre,Basic
+,,,,176.0,Infinite Health,Rio de Janeiro,Basic
+,,,,177.0,Formula Grey,São Paulo,Basic
+,,,,178.0,Terra,Rio de Janeiro,Basic
+,,,,179.0,Four Leaf,Salvador,Basic
+,,,,180.0,ManPower,São Paulo,Basic
+,,,,181.0,Integra Design,Curitiba,Basic
+,,,,182.0,Freedom Map,Belo Horizonte,Basic
+,,,,183.0,The Fox,Porto Alegre,Basic
+,,,,184.0,Fresh Start,São Paulo,Basic
+,,,,185.0,Master Builder,Florianópolis,Basic
+,,,,186.0,Integra Wealth,São Paulo,Basic
+,,,,187.0,Friendly Interior,Belo Horizonte,Basic
+,,,,188.0,The Happy,São Paulo,Basic
+,,,,189.0,Full Color,Belo Horizonte,Basic
+,,,,190.0,Matrix Interior,Salvador,Basic
+,,,,191.0,Intelli Wealth,São Paulo,Basic
+,,,,192.0,Future Plan,Salvador,Basic
+,,,,193.0,The Jolly,Porto Alegre,Basic
+,,,,194.0,Access Asia,Belo Horizonte,Basic
+,,,,195.0,MegaSolutions,Porto Alegre,Basic
+,,,,196.0,Las Vegas,Rio de Janeiro,Basic
+,,,,197.0,Acuserv,São Paulo,Basic
+,,,,198.0,The Pink,Rio de Janeiro,Basic
+,,,,199.0,Adapt,Salvador,Basic
+,,,,200.0,Merrymaking,São Paulo,Basic
+,,,,201.0,Lazysize,Curitiba,Basic
+,,,,202.0,Adaptas,Belo Horizonte,Basic
+,,,,203.0,The Spotted,Porto Alegre,Basic
+,,,,204.0,Adaptaz,São Paulo,Basic
+,,,,205.0,Mikrotechnic,Florianópolis,Basic
+,,,,206.0,Liberty Wealth,São Paulo,Basic
+,,,,207.0,Affinity Investment,Belo Horizonte,Basic
+,,,,208.0,Titania,São Paulo,Basic
+,,,,209.0,Afforda,Belo Horizonte,Basic
+,,,,210.0,Mission Realty,Salvador,Basic
+,,,,211.0,Life Plan,São Paulo,Basic
+,,,,212.0,Alert Alarm,Salvador,Basic
+,,,,213.0,Total Serve,Porto Alegre,Basic
+,,,,214.0,Alladin Realty,Belo Horizonte,Basic
+,,,,215.0,Modern Realty,Porto Alegre,Basic
+,,,,216.0,Locost Accessories,Rio de Janeiro,Basic
+,,,,217.0,Architectural Genie,São Paulo,Basic
+,,,,218.0,Total Yard,Rio de Janeiro,Basic
+,,,,219.0,Asian Answers,Salvador,Basic
+,,,,220.0,Monk House,São Paulo,Basic
+,,,,221.0,Netaid,Curitiba,Basic
+,,,,222.0,Asian Junction,Belo Horizonte,Basic
+,,,,223.0,Belle Ladi,Porto Alegre,Basic
+,,,,224.0,Asian Plan,São Paulo,Basic
+,,,,225.0,Monk Furn,Florianópolis,Basic
+,,,,226.0,Netcore,São Paulo,Basic
+,,,,227.0,Asiatic Solutions,Belo Horizonte,Basic
+,,,,228.0,Best Biz,São Paulo,Basic
+,,,,229.0,Atlas Architectural,Belo Horizonte,Basic
+,,,,230.0,Monmax,Salvador,Basic
+,,,,231.0,New World Gen,São Paulo,Basic
+,,,,232.0,Avant Garde,Salvador,Basic
+,,,,233.0,Buena To.,Porto Alegre,Basic
+,,,,234.0,Avant Garden,Belo Horizonte,Basic
+,,,,235.0,Multi Tech,Porto Alegre,Basic
+,,,,236.0,Northern Star,Rio de Janeiro,Basic
+,,,,237.0,Awthentikz,São Paulo,Basic
+,,,,238.0,Bold Ideas,Rio de Janeiro,Basic
+,,,,239.0,Macroserve,Salvador,Basic
+,,,,240.0,E-zhe Source,São Paulo,Basic
+,,,,241.0,Simple Solutions,Curitiba,Basic
+,,,,242.0,Magna Consulting,Belo Horizonte,Basic
+,,,,243.0,Brilliant Home,Porto Alegre,Basic
+,,,,244.0,Dreamscape Garden,Curitiba,Basic
+,,,,245.0,Idea Infinity,São Paulo,Basic
