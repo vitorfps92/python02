@@ -37,7 +37,7 @@ html_template = '''
             <li><a href='/upload_avengers'> Upload do csv </a></li>
             <li><a href='/apagar_avengers'> Apagar tabela Avengers </a></li>
             <li><a href='/atribuir_paises_avengers'> Atribuir países </a></li>
-            <li><a href='/avengers_vs_drinks'> V.A.A (Vingadores Alcoolicos Anônimos </a></li>
+            <li><a href='/avengers_vs_drinks'> V.A.A (Vingadores Alcoolicos Anônimos) </a></li>
         </ul>
 '''
 # Rota inicial com os links para os gráficos
@@ -109,7 +109,15 @@ def grafico3():
 # Rota 4 - Comparativo entre os tipos de bebida
 @app.route('/grafico4')
 def grafico4():
-    return()
+    conn = sqlite3.connect('consumo_alcool.db')
+    df = pd.read_sql_query('SELECT beer_servings, spirit_servings, wine_servings FROM drinks', conn)
+    conn.close()
+
+    medias = df.mean().reset_index()
+    medias.columns = ['Tipo', 'Média']
+
+    fig = px.pie(medias, names='Tipo', values='Média', title='Comparativo entre os tipos de bebida')
+    return fig.to_html() + "<br/><a href='/'></a>"
 
 # Iniciar o servidor flask
 if __name__ == '__main__':
