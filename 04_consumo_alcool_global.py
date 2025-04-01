@@ -104,7 +104,7 @@ def grafico3():
 
     df_regioes = pd.DataFrame(dados)
     fig = px.pie(df_regioes, names='Região', values='Consumo total', title='Consumo total por região')
-    return fig.to_html() + "<br/><a href='/'></a>"
+    return fig.to_html() + "<br><a href='/'></a>"
 
 # Rota 4 - Comparativo entre os tipos de bebida
 @app.route('/grafico4')
@@ -117,7 +117,69 @@ def grafico4():
     medias.columns = ['Tipo', 'Média']
 
     fig = px.pie(medias, names='Tipo', values='Média', title='Comparativo entre os tipos de bebida')
-    return fig.to_html() + "<br/><a href='/'></a>"
+    return fig.to_html() + "<br><a href='/'></a>"
+
+# Parte 2 - Rota comparar
+@app.route('/comparar', methods=['GET','POST'])
+def comparar():
+    opcoes = ['beer_servings','spirit_servings','wine_servings','total_litres_of_pure_alcohol']
+    if request.method == 'POST':
+        eixo_x = request.form.get('eixo_x')
+        eixo_y = request.form.get('eixo_y')
+        
+        if eixo_x == eixo_y:
+            return "<h3> O valor do eixo x não pode ser igual ao valor do eixo y! </h3>"
+        
+        conn = sqlite3.connect('consumo_alcool.db')
+        df = pd.read_sql_query('''
+                            SELECT country, {}, {}
+                            FROM drinks
+                            '''.format(eixo_x,eixo_y), conn)
+        conn.close()
+
+        fig = px.scatter(df, x=eixo_x, y=eixo_y, title='Comparação entre {} e {}'.format(eixo_x, eixo_y))
+        fig.update_traces(textposition="top center")
+        return fig.to_html() + "<br/><a href='/'> Voltar ao início </a>"
+    return render_template_string('''
+        <h2> Comparar campos </h2>
+        <form method='POST'>
+            <label for="eixo_x"> Eixo X: </label>
+            <select name = 'eixo_x'>
+                {% for col in opcoes %}
+                    <option value="{{ col }}"> {{ col }} </option>
+                {% endfor %}
+            </select><br><br>
+                                  
+            <label for="eixo_y"> Eixo Y: </label>
+            <select name = 'eixo_y'>
+                {% for col in opcoes %}
+                    <option value="{{ col }}"> {{ col }} </option>
+                {% endfor %}
+            </select><br><br>
+            <input type="submit" value="Comparar">
+        </form>
+    ''', opcoes=opcoes)
+
+# Parte 2 - Rota Upload avengers
+@app.route('/upload_avengers', methods = ['GET', 'POST'])
+def upload_avengers():
+    if request.method=='POST':
+        file = request.files['file']
+        if not file:
+            return "<h2>Nenhum arquivo enviado!</h2>" + "<br><a href='/upload_avengers'></a>"
+        df_avengers = pd.read_csv(file, encoding='latin1')
+        conn = sqlite3.connect('consumo_alcool.db')
+        df_avengers.to_sql('avengers', conn, if_exists='replace', index=False)
+        conn.commit()
+        conn.close()
+        return "<h2> Arquivo inserido com sucesso! </h2><a href='/'> Voltar </a>"
+    return '''
+    <h2> Upload do arquivo Avengers </h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <input type="submit" value="Enviar">
+    </form>
+'''
 
 # Iniciar o servidor flask
 if __name__ == '__main__':
