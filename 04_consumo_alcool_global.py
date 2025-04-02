@@ -37,6 +37,8 @@ html_template = '''
             <li><a href='/upload_avengers'> Upload do csv </a></li>
             <li><a href='/apagar_avengers'> Apagar tabela Avengers </a></li>
             <li><a href='/atribuir_paises_avengers'> Atribuir países </a></li>
+            <li><a href='/consultar_avengers'> Consultar Avengers </a></li>
+            <li><a href='//ver_avenger'> Consultar detalhes do Vingador </a></li>
             <li><a href='/avengers_vs_drinks'> V.A.A (Vingadores Alcoolicos Anônimos) </a></li>
         </ul>
 '''
@@ -180,7 +182,62 @@ def upload_avengers():
         <input type="submit" value="Enviar">
     </form>
 '''
+# Parte 2 - Excluir avengers
+@app.route('/apagar_avengers')
+def apagar_avengers():
+    conn = sqlite3.connect('consumo_alcool.db')
+    cursor = conn.cursor()
 
+    try:
+        cursor.execute('DROP TABLE IF EXISTS avengers')
+        conn.commit()
+        mensagem = '<h3> Tabela avengers apagada com sucesso! </h3>'
+    except Exception as errinho:
+        mensagem_erro = f'<h3> Erro ao apagar a tabela: {str(errinho)} </h3>'
+    
+    conn.close()
+    return mensagem + "<br><hr><br><a href='/'> Voltar ao início </a>"
+
+# Parte 2 - Atribuir países
+@app.route('/atribuir_paises_avengers')
+def atribuir_paises_avengers():
+    conn = sqlite3.connect('consumo_alcool.db')
+    df_avengers = pd.read_sql_query('SELECT * FROM avengers', conn)
+    df_drinks = pd.read_sql_query('SELECT country FROM drinks', conn)
+
+    random.seed(42)
+    paises_possiveis = df_drinks['country'].unique()
+    df_avengers['country'] = [random.choice(paises_possiveis) for i in range(len(df_avengers))]
+
+    df_avengers.to_sql('avengers', conn, if_exists='replace', index=False)
+    conn.commit()
+    conn.close()
+
+    return "<h3> Países atribuídos com sucesso! </h3><br><hr><br><a href='/'> Voltar ao início </a>"
+
+@app.route('/consultar_avengers')
+def consultar_avengers():
+    conn = sqlite3.connect('consumo_alcool.db')
+    try:
+        df_avengers = pd.read_sql_query('SELECT * FROM avengers', conn)
+    except Exception as e:
+        conn.close()
+        return f'<h2>Erro ao consultar a tabela: {str(e)}</h2>'
+    conn.close()
+
+    if df_avengers.empty:
+        return '<h3> A tabela está vazia! </h3>'
+    
+    return df_avengers.to_html(index=False) + "</h3><br><hr><br><a href='/'> Voltar ao início </a>"
+
+# Parte 2 - Ver Avenger
+@app.route('/ver_avenger')
+def ver_avenger():
+    conn = sqlite3.connect('consumo_alcool.db')
+    df_avengers = pd.read_sql_query('SELECT * FROM avengers', conn)
+    conn.close()
+
+    
 # Iniciar o servidor flask
 if __name__ == '__main__':
     app.run(debug=True)
