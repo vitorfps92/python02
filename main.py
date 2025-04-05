@@ -123,8 +123,8 @@ def graficos():
                 <title></title>
                 <style>
                     .container{
-                        display:flex,
-                        justify-content:space-around}
+                        display:flex;
+                        justify-content:space-around;}
                     .graph{
                         width: 48%;}
                 </style>
@@ -134,13 +134,165 @@ def graficos():
                 <div class="container">
                     <div class="graph"> {{ grafico1|safe }} </div>
                     <div class="graph"> {{ grafico2|safe }} </div>
-                    <div class="graph"></div>
                 </div>
                 <br><br>
                 <div style="text-align: center"><a href="/"></a></div>
             </body>
         </html>
     ''', grafico1=graph_html_1, grafico2 = graph_html_2)
+
+# Rota para editar inadimplência
+@app.route('/editar_inadimplencia', methods=['GET', 'POST'])
+def editar_inadimplencia():
+    if request.method == 'POST':
+        mes= request.form.get('campo_mes')
+        novo = request.form.get('campo_valor')
+        try:
+            novo_valor = float(novo_valor)
+        except:
+            return jsonify({'mensagem': 'Valor inválido,'})
+        
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+            cursor.execute("UPDATE inadimplencia SET inadimplencia = ? WHERE mes = ?", novo_valor, mes)
+            conn.commit()
+        return jsonify({'mensagem': 'Valor atualizado para o mês'})
+
+    return render_template_string('''
+        <h1> Editar inadimplência </h1>
+        <form method='post'>
+            <label for='campo_mes'> Mês (AAAA-MM) </label>
+            <input type='text' name='' required><br>
+                                  
+            <label for='campo_valor'> Novo valor de inadimplência </label>
+            <input type='text' name='campo_valor' required><br>
+                                  
+            <input type='submit' value='Atualizar'>
+        </form>
+        <br>
+        <a href='/'> Voltar </a>
+''')
+
+# Rota de Correlação
+@app.route('/correlacao')
+def correlacao():
+    with sqlite3.connect(DB_PATH) as conn:
+        inad_df = pd.read_sql_query('SELECT * FROM inadimplencia',conn)
+        selic_df = pd.read_sql_query('SELECT * FROM selic',conn)
+    merged = pd.merge(inad_df,selic_df, on='mes')
+    corr = merged['inadimplencia'].corr(merged['selic_diaria'])
+
+    # Regressão linear
+    y = merged['inadimplencia']
+    x = merged['selic_diaria']
+    m, b = np.polyfit(x,y,1)
+
+    fig = go.Figure()
+
+    # Etapa A
+    fig.add_trace(go.scatter(
+    x=x,
+    y=y,
+    mode = 'markers',
+    name = 'Inadimplência vs SELIC',
+    marker=dict(
+        color = 'rgba(0, 123, 2, 0.8)',
+        size = 12,
+        line = dict(width=2,color = 'white'),
+        symbol = 'circle'),
+        hovertemplate = 'SELIC: %{x:.2f}%<br> Inadimplência: %{y:.2f}%<extra></extra>'
+        ))
+    
+    #Etapa B
+    fig.add_trace(go.scatter(
+        x=x,
+        y= m*y+b,
+        mode='lines',
+        name='Linha de Tendência',
+        line=dict(
+            color='rgba(220,53,69,1)', 
+            width=4,
+            dash='dot'
+        )
+    ))
+
+    fig.update_layout(
+        title={
+            'text': '<b>Correlação entre SELIC e Inadimplência</b><br><span style="font-size:16px"> Coeficiente de Correlação: {correl:.2f}</span>',
+            'y':0.95,
+            'x':0.5,
+            'xanchor':'center',
+            'yanchor':'top'
+        },
+        xaxis_title = dict(
+            text = 'SELIC média mensal (%)',
+            font=dict(size = 18, family = 'Arial', color = 'gray')
+        ),
+        yaxis_title = dict(
+            text = 'Inadimplência (%)',
+            font=dict(size = 18, family = 'Arial', color = 'gray')
+        ),
+        xaxis = dict(
+            tickfont=dict(size=14, font='Arial', color='black'),
+            gridcolor='lightgray'
+        ),
+        yaxis = dict(
+            tickfont=dict(size=14, font='Arial', color='black'),
+            gridcolor = 'lightgray'
+        ),
+        plot_bgcolor = '#f8f9fa',
+        paper_bgcolor = 'white',
+        font=dict(size=14, font='Arial', color='black'),
+        legend = dict(
+            orientation='h',
+            yanchor = 'bottom',
+            y=1.05,
+            xanchor='center',
+            x=0.5,
+            bgcolor = 'rgba(0,0,0,0)',
+            borderwidth = 0
+        ),
+        margin = dict(l=60, r=60, t=120, b=60)
+        )
+
+    graph_html = fig.to_html(full_html = False, include_plotlyjs='cdn')
+    return render_template_string('''
+        <html>
+            <head>
+                <title> Correlação SELIC vs Inadimplência </title>
+                <style>
+                    body{
+                        font-family: Arial, sans-serif;
+                        background-color: #ffffff;
+                        color: #333;       
+                    }
+                    .container{
+                        width: 90%;
+                        margin:auto;
+                        text-align:center;
+                    }
+                    h1{
+                        margin-top:40px;
+                        font-weight:bold;
+                    }
+                    a{
+                        text-decoration:none;
+                        color:00ff00;
+                    }
+                    a:hover{
+                        text-decoration:underline;         
+                    }
+                </style>
+            </head>
+            <body>
+                <div class='container'>
+                    <h1> Correlação SELIC vs Inadimplência </h1>
+                    <div> {{ grafico|safe }} </div>
+                    <br><a href='/'> Voltar </a>
+                </div>
+            </body>
+        </html>
+    ''', grafico = graph_html)
 
 # Iniciar o servidor local Flask da aplicação
 if __name__ == '__main__':
